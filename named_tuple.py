@@ -9,3 +9,11 @@ person.name
 person.email
 person.password
 
+from collections import namedtuple
+
+users = namedtuple("users",["name",'age','is_male'])
+user = users(name="Shohjahon",age=19,is_male=True)
+
+print(user.name)
+print(user.age)
+print(user.is_male)
